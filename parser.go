@@ -93,7 +93,7 @@ func parseBlock(block, dateType string) (string, error) {
 	interval := strings.Split(block, "-")
 
 	// e.g. 2-4-6
-	if len(everyNthBlock) > 2 {
+	if len(interval) > 2 {
 		return "", fmt.Errorf("invalid cron block %s", block)
 	}
 

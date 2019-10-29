@@ -47,7 +47,10 @@ while in the same directory as the code.
 
 ## TODO
 
-* Simplify the code and add robustness by using Regex to parse the cron blocks
+* Explore the possibility of using regexes as an alternative to parsing the input strings
 * Add support for more particular use cases (e.g. `0-20/2` or `*,15`)
-* Add support for using 7  as a day of week (sunday)
-* Review code and clean up to improve readability
+* Add more robust error handling
+* Add support for using 7 as a day of week (sunday)
+
+## Author
+Tiago Mendes (tgmendes@gmail.com)

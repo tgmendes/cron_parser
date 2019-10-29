@@ -178,13 +178,13 @@ func TestOddErrors(t *testing.T) {
 			expr: "15 0 1,15 * 1-5",
 		}, {
 			desc: "with multiple forward slashes",
-			expr: "*/15/21 0 1,15 * 1-5",
+			expr: "*/15/21 0 1,15 * 1-5 /usr/bin/find",
 		}, {
-			desc: "with forward slashe without star",
-			expr: "12/21 0 1,15 * 1-5",
+			desc: "with forward slashes without star",
+			expr: "12/21 0 1,15 * 1-5 /usr/bin/find",
 		}, {
 			desc: "with multiple dashes",
-			expr: "*/15 0 1,15 * 1-5-8",
+			expr: "*/15 0 1,15 * 1-5-6 /usr/bin/find",
 		},
 	}
 	for _, tC := range testCases {
